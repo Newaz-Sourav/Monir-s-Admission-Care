@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6">
           {/* Logo Placeholder */}
           <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-700 font-bold text-xl">
-            <img src="public/images/log.png" alt="" />
+            <img src="images/log.png" alt="" />
           </div>
 
           {/* Brand & Description */}
