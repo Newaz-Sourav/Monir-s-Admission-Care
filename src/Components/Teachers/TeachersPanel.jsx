@@ -57,6 +57,14 @@ const teachers = [
     university: "University of Chittagong",
     image: "images/teachers/Jahidul.jpeg",
   },
+
+  {
+    id: 8,
+    name: "Md Shahadat Hossan Ashik",
+    subject: "Political Science",
+    university: "University of Chittagong",
+    image: "images/teachers/anik.png",
+  },
 ];
 
 const TeachersPanel = () => {
