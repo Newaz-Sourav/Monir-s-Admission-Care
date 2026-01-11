@@ -13,6 +13,8 @@ import TeachersCategory from "./Components/Teachers/TeachersCategory";
 import LearningPlaylists from "./Components/LearningPlaylists";
 import FreeExamInfo from "./Components/FreeExamInfo";
 import Footer from "./Components/Footer";
+import Liveclass from "./Components/Liveclass";
+import Joinus from "./Components/Joinus";
 
 
 
@@ -27,8 +29,10 @@ import Footer from "./Components/Footer";
       <Navbar></Navbar>
       <ImageScroller></ImageScroller>
       <TeachersPanel></TeachersPanel>
+      <Liveclass></Liveclass>
       <SessionTabs></SessionTabs>
       <TeachersCategory></TeachersCategory>
+      <Joinus></Joinus>
       <LearningPlaylists></LearningPlaylists>
       <FreeExamInfo></FreeExamInfo>
       <Footer></Footer>

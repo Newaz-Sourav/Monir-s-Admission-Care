@@ -3,13 +3,13 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const ImageScroller = () => {
   const images = [
-    "images/IMG_20231016_005819.jpg",
+    "images/IMG-20250927-WA0003.jpg",
+
+    "images/SAVE_20260111_162711.jpg",
 
     "images/IMG-20250927-WA0003.jpg",
 
-    "images/IMG_20231016_005819.jpg",
-
-    "images/IMG-20250927-WA0003.jpg",
+    "images/SAVE_20260111_162711.jpg",
   ];
 
   const [current, setCurrent] = useState(0);
