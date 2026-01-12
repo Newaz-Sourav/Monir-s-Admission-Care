@@ -10,11 +10,15 @@ const teachers = [
 
   { id: 4, name: "S.A Rifat", subject: "Banking & Insurance", university: "University of Chittagong", image: "images/teachers/sa rifat.png", category: "bangla" },
 
+    { id: 7, name: "Maruf Abedin Mahi", subject: "Chemistry", university: "University of Chittagong", image: "images/teachers/maruf abedin.png", category: "math" },
+
   { id: 5, name: "Jahed Hasan Sakib", subject: "Psychology", university: "University of Chittagong", image: "images/teachers/sakib.png", category: "math" },
 
-  { id: 6, name: "Maruf Abedin Mahi", subject: "Chemistry", university: "University of Chittagong", image: "images/teachers/maruf abedin.png", category: "math" },
+  { id: 6, name: "Jahidul Islam", subject: "History", university: "University of Chittagong", image: "images/teachers/Jahidul.jpeg", category: "iq" },
 
-  { id: 7, name: "Jahidul Islam", subject: "History", university: "University of Chittagong", image: "images/teachers/Jahidul.jpeg", category: "iq" },
+
+
+  
 ];
 
 const floatingVariants = {

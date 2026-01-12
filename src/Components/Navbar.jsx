@@ -8,7 +8,7 @@ const Navbar = () => {
   const navItems = [
     { label: "University Admission", href: "/uniadmission" },
     { label: "HSC Program", href: "/hsc" },
-    { label: "Teachers Panel", href: "/teachers" },
+    { label: "Teachers' Panel", href: "/teachers" },
     { label: "About Us", href: "#" },
   ];
 

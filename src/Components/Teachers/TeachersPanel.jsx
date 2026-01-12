@@ -18,13 +18,13 @@ const teachers = [
     image: "images/teachers/nipu.jpg",
   },
   {
-    id: 3,
-    name: "Rifat Hossen",
-    degree: "BSS",
-    subject: "Department of Sociology",
+    id: 6,
+    name: "Maruf Abedin Mahi",
+    subject: "Department of Chemistry",
     university: "University of Chittagong",
-    image: "images/teachers/rifat.png",
+    image: "images/teachers/maruf abedin.png",
   },
+ 
   {
     id: 4,
     name: "S.A Rifat",
@@ -40,11 +40,12 @@ const teachers = [
     image: "images/teachers/sakib.png",
   },
   {
-    id: 6,
-    name: "Maruf Abedin Mahi",
-    subject: "Department of Chemistry",
+    id: 3,
+    name: "Rifat Hossen",
+    degree: "BSS",
+    subject: "Department of Sociology",
     university: "University of Chittagong",
-    image: "images/teachers/maruf abedin.png",
+    image: "images/teachers/rifat.png",
   },
   {
     id: 7,

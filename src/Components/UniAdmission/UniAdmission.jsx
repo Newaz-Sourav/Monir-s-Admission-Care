@@ -13,7 +13,7 @@ const UniAdmission = () => {
     {
       name: "D Unit",
       desc: "For all faculty students with analytical aptitude.",
-      subjects: ["English", "Bangla","General Knowledge", "Economics", "Math","IQ"],
+      subjects: ["English", "Bangla","IQ","GK/Economics/Math"],
       icon: <Brain className="w-8 h-8 text-green-600" />,
       bg: "bg-green-50",
     },
@@ -34,7 +34,7 @@ const UniAdmission = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 py-20 px-6 flex flex-col items-center">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 py-20 px-4 flex flex-col items-center">
       {/* Header */}
       <motion.div
         initial={{ opacity: 0, y: -30 }}
