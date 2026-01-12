@@ -5,20 +5,18 @@ const teachers = [
   {
     id: 1,
     name: "Monirul Islam",
-    degree: "BA, MA",
-    subject: "Department of Islamic History & Culture",
-    university: "University of Chittagong",
+    degree: "B.A, M.A",
+    subject: "University of Chittagong",
+    university: "Founder : Monir's Admission Care",
     image: "images/teachers/monir.png",
   },
-
   {
     id: 2,
     name: "Kayem Muktar Nipu",
     subject: "Department of English",
     university: "University of Dhaka",
-    image: "images/teachers/nipu.png",
+    image: "images/teachers/nipu.jpg",
   },
-
   {
     id: 3,
     name: "Rifat Hossen",
@@ -27,7 +25,6 @@ const teachers = [
     university: "University of Chittagong",
     image: "images/teachers/rifat.png",
   },
-  
   {
     id: 4,
     name: "S.A Rifat",
@@ -49,15 +46,13 @@ const teachers = [
     university: "University of Chittagong",
     image: "images/teachers/maruf abedin.png",
   },
-
-   {
+  {
     id: 7,
     name: "Jahidul Islam",
     subject: "Department of History",
     university: "University of Chittagong",
     image: "images/teachers/Jahidul.jpeg",
   },
-
   {
     id: 8,
     name: "Md Shahadat Hossan Ashik",
@@ -81,10 +76,12 @@ const TeachersPanel = () => {
       p-6 w-64 sm:w-full max-w-xs relative overflow-hidden h-[380px]"
     >
       {/* Glow Effect */}
-      <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-700 bg-gradient-to-br from-indigo-100 via-blue-100 to-transparent blur-2xl"></div>
+      <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-700 
+      bg-gradient-to-br from-indigo-100 via-blue-100 to-transparent blur-2xl"></div>
 
       {/* Image */}
-      <div className="relative w-40 h-44 sm:w-48 sm:h-52 rounded-2xl overflow-hidden shadow-md bg-gradient-to-br from-indigo-50 to-blue-50 flex justify-center items-center">
+      <div className="relative w-40 h-44 sm:w-48 sm:h-52 rounded-2xl overflow-hidden shadow-md 
+      bg-gradient-to-br from-indigo-50 to-blue-50 flex justify-center items-center">
         <motion.img
           src={teacher.image}
           alt={teacher.name}
@@ -94,21 +91,30 @@ const TeachersPanel = () => {
 
       {/* Text */}
       <div className="mt-4 text-center z-10 space-y-1 flex-1 flex flex-col justify-center">
-        <h3 className="text-lg sm:text-xl md:text-2xl font-extrabold text-gray-900 tracking-tight leading-snug">
+        <h3 className="text-lg sm:text-xl md:text-2xl font-extrabold text-gray-900 tracking-tight">
           {teacher.name}
         </h3>
 
         {teacher.degree && (
-          <p className="text-sm sm:text-base text-gray-700 font-medium tracking-wide">
+          <p className="text-sm sm:text-base text-gray-700 font-medium">
             {teacher.degree}
           </p>
         )}
 
-        <p className="text-sm sm:text-base text-indigo-600 font-semibold leading-tight">
+        <p className="text-sm sm:text-base text-indigo-600 font-semibold">
           {teacher.subject}
         </p>
 
-        <p className="text-xs sm:text-sm text-gray-500 italic">{teacher.university}</p>
+        {/* ⭐ Special style only for Founder */}
+        <p
+          className={`text-xs sm:text-sm italic mt-1 ${
+            teacher.id === 1
+              ? "font-bold text-green-700 bg-indigo-100 px-2 py-1 rounded-full inline-block"
+              : "text-gray-500"
+          }`}
+        >
+          {teacher.university}
+        </p>
       </div>
     </motion.div>
   );
@@ -121,36 +127,39 @@ const TeachersPanel = () => {
       viewport={{ once: true }}
       className="text-center font-extrabold text-3xl sm:text-4xl md:text-5xl mb-10 
       bg-gradient-to-r from-indigo-700 via-blue-600 to-indigo-700 bg-[length:200%_auto] 
-      animate-gradient-x text-transparent bg-clip-text drop-shadow-sm tracking-tight"
+      animate-gradient-x text-transparent bg-clip-text tracking-tight"
     >
       {text}
     </motion.h2>
   );
 
   return (
-    <div className="relative sm:min-h-screen bg-gradient-to-b from-indigo-50 via-white to-blue-100 py-16 px-4 sm:px-8 md:px-14 lg:px-20 overflow-hidden mt-6">
+    <div className="relative sm:min-h-screen bg-gradient-to-b from-indigo-50 via-white to-blue-100 
+    py-16 px-4 sm:px-8 md:px-14 lg:px-20 overflow-hidden mt-6">
+
       {/* Background Animation */}
       <motion.div
         animate={{ y: [0, 20, 0] }}
         transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
         className="absolute top-0 left-0 w-72 h-72 bg-indigo-200/40 blur-3xl rounded-full -z-10"
-      ></motion.div>
+      />
       <motion.div
         animate={{ y: [0, -25, 0] }}
         transition={{ repeat: Infinity, duration: 8, ease: "easeInOut" }}
         className="absolute bottom-10 right-10 w-80 h-80 bg-blue-200/40 blur-3xl rounded-full -z-10"
-      ></motion.div>
+      />
 
       {/* Title */}
       <GradientHeading text="Our Teachers' Panel" />
 
       {/* 💻 Desktop Grid */}
-      <div className="hidden sm:grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-8 justify-items-center">
-        {teachers.map((t) => renderCard(t))}
+      <div className="hidden sm:grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 
+      gap-8 justify-items-center">
+        {teachers.map(renderCard)}
       </div>
 
-      {/* 📱 Mobile Horizontal Scroll */}
-      <div className="sm:hidden flex gap-6 overflow-x-auto pb-6 px-1 scrollbar-thin scrollbar-thumb-indigo-300 scrollbar-track-transparent snap-x snap-mandatory">
+      {/* 📱 Mobile Scroll */}
+      <div className="sm:hidden flex gap-6 overflow-x-auto pb-6 px-1 snap-x snap-mandatory">
         {teachers.map((t) => (
           <div key={t.id} className="snap-center">
             {renderCard(t)}

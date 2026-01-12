@@ -29,7 +29,7 @@ const Joinus = () => {
   {
   title: "Official Facebook Group",
   description: "Join our official Facebook group to connect with the community, get updates, and share knowledge.",
-  link: "https://facebook.com/groups/your-group-id", // এখানে তোমার real group link বসাও
+  link: "https://www.facebook.com/share/g/1F2XYxEKUn/", // এখানে তোমার real group link বসাও
   gradient: "from-blue-600/20 to-indigo-600/20",
   text: "text-blue-700",
   icon: <FaFacebook />, // Facebook logo
@@ -38,7 +38,7 @@ const Joinus = () => {
     {
       title: "Free Playlist",
       description: "Watch free classes and learning resources anytime.",
-      link: "https://example.com/playlist",
+      link: "https://www.youtube.com/@MONIRSAdmissionCare/playlists",
       gradient: "from-red-500/20 to-rose-500/20",
       text: "text-red-600",
       icon: <FaYoutube />,
@@ -46,7 +46,7 @@ const Joinus = () => {
     {
       title: "Official Facebook",
       description: "Stay connected with updates and community posts.",
-      link: "https://facebook.com",
+      link: "https://www.facebook.com/share/1C7o52Vr48/",
       gradient: "from-blue-600/20 to-indigo-600/20",
       text: "text-indigo-600",
       icon: <FaFacebook />,
@@ -54,7 +54,7 @@ const Joinus = () => {
     {
       title: "Official Instagram",
       description: "Follow us for reels, tips, and behind-the-scenes content.",
-      link: "https://instagram.com",
+      link: "https://www.instagram.com/monirsadmissioncare?igsh=dDQ5em1nZG94ZzA3",
       gradient: "from-pink-500/20 to-rose-500/20",
       text: "text-pink-600",
       icon: <FaInstagram />,

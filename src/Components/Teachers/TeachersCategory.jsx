@@ -3,11 +3,17 @@ import { motion } from "framer-motion";
 
 const teachers = [
   { id: 1, name: "Monirul Islam", degree: "BA, MA", subject: "Islamic History & Culture", university: "University of Chittagong", image: "images/teachers/monir.png", category: "english" },
-  { id: 2, name: "Kayem Muktar Nipu", subject: "English", university: "University of Dhaka", image: "images/teachers/nipu.png", category: "english" },
+
+  { id: 2, name: "Kayem Muktar Nipu", subject: "English", university: "University of Dhaka", image: "images/teachers/nipu.jpg", category: "english" },
+
   { id: 3, name: "Rifat Hossen", degree: "BSS", subject: "Sociology", university: "University of Chittagong", image: "images/teachers/rifat.png", category: "bangla" },
+
   { id: 4, name: "S.A Rifat", subject: "Banking & Insurance", university: "University of Chittagong", image: "images/teachers/sa rifat.png", category: "bangla" },
+
   { id: 5, name: "Jahed Hasan Sakib", subject: "Psychology", university: "University of Chittagong", image: "images/teachers/sakib.png", category: "math" },
+
   { id: 6, name: "Maruf Abedin Mahi", subject: "Chemistry", university: "University of Chittagong", image: "images/teachers/maruf abedin.png", category: "math" },
+
   { id: 7, name: "Jahidul Islam", subject: "History", university: "University of Chittagong", image: "images/teachers/Jahidul.jpeg", category: "iq" },
 ];
 
