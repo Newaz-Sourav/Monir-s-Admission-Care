@@ -125,6 +125,14 @@ const Yr2526 = () => {
       university: "University of Chittagong",
       image: "images/achivers/2526/mahmudul.jpg",
     },
+
+    {
+      id: 15,
+      name: "Munira Tajima",
+      college: "Ex Haji Mohammad Mohsin College",
+      university: "University of Chittagong",
+      image: "images/achivers/2526/monira.jpeg",
+    },
   ];
 
   useEffect(() => {
