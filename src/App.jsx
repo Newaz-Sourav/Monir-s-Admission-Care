@@ -9,6 +9,7 @@ import ImageScroller from "./Components/ImageScroller";
 import TeachersPanel from "./Components/Teachers/TeachersPanel"
 import SessionTabs from "./Components/Sessions/SessionTabs";
 import Yr2425 from './Components/achievements/yr2425';
+import Yr2526 from './Components/achievements/yr2526';
 import TeachersCategory from "./Components/Teachers/TeachersCategory";
 import LearningPlaylists from "./Components/LearningPlaylists";
 import FreeExamInfo from "./Components/FreeExamInfo";
@@ -82,6 +83,18 @@ import Joinus from "./Components/Joinus";
     <div>
       <Navbar></Navbar>
       <Yr2425></Yr2425>
+      <Footer></Footer>
+      
+    </div>,
+    
+  },
+
+  {
+    path: "/yr2526",
+    element: 
+    <div>
+      <Navbar></Navbar>
+      <Yr2526></Yr2526>
       <Footer></Footer>
       
     </div>,

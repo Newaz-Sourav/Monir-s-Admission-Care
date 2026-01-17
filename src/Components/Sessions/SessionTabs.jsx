@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 
 // ✅ Structured array (with route slug)
 const sessions = [
+  { id: 5, title: "2025-2026", path: "/yr2526" },
   { id: 1, title: "2024-2025", path: "/yr2425" },
   { id: 2, title: "2023-2024", path: "" },
   { id: 3, title: "2022-2023", path: "" },
